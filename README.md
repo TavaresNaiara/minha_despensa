@@ -1,14 +1,14 @@
 # minha_despensa
 
 README.md – Projeto POO – Aplicativo de Controle de Despensa
-📌 Descrição do Projeto
+- Descrição do Projeto
 
 Este projeto tem como objetivo desenvolver um aplicativo de controle de despensa, dividido em duas categorias principais: Armário e Geladeira.
 O sistema permite ao usuário cadastrar, listar, editar e excluir itens de forma organizada, garantindo maior controle dos produtos armazenados e reduzindo desperdícios.
 
 Trata-se da primeira entrega da disciplina de Programação Orientada a Objetos (POO).
 
-🎯 Objetivos do Sistema
+- Objetivos do Sistema
 
 Proporcionar ao usuário um controle simples e eficiente sobre os itens da despensa.
 
@@ -18,7 +18,7 @@ Permitir o gerenciamento completo dos itens no banco de dados.
 
 Aplicar conceitos de POO, persistência de dados e boas práticas de desenvolvimento.
 
-⚙️ Funcionalidades
+- Funcionalidades
 ✔️ 1. Adicionar item
 
 Nome do produto
@@ -27,7 +27,7 @@ Categoria (Armário/Geladeira)
 
 Quantidade
 
-Data de validade (opcional)
+Data de validade 
 
 ✔️ 2. Listar itens
 
@@ -51,7 +51,8 @@ armario
 
 geladeira
 
-🏗️ Arquitetura Sugerida
+- Arquitetura
+  
 /src
   /model
      Item.java
@@ -66,58 +67,18 @@ geladeira
   script.sql
 README.md
 
-🛠️ Tecnologias Utilizadas
+ Tecnologias Utilizadas
 
-Java (Programação Orientada a Objetos)
+Java 
 
-NetBeans (IDE principal do desenvolvimento)
+NetBeans 
 
-MySQL (banco de dados relacional)
+MySQL 
 
-JDBC (conexão entre Java e MySQL)
+JDBC 
 
-GitHub (controle de versão e entrega)
+GitHub 
 
-🗄️ Script do Banco de Dados (MySQL)
-CREATE DATABASE despensa;
-USE despensa;
-```
-CREATE TABLE itens (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL,
-    categoria ENUM('armario', 'geladeira') NOT NULL,
-    quantidade INT NOT NULL,
-    validade DATE
-);
-```
-🔌 Configuração da Conexão JDBC (Exemplo)
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d57a57d4-c85d-459d-8f56-c9ee3b029972" />
 
-Coloque no arquivo ConnectionFactory.java:
-```
-package dao;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-
-public class ConnectionFactory {
-
-    private static final String URL = "jdbc:mysql://localhost:3306/despensa";
-    private static final String USER = "root";
-    private static final String PASSWORD = "SUA_SENHA";
-
-    public static Connection getConnection() {
-        try {
-            return DriverManager.getConnection(URL, USER, PASSWORD);
-        } catch (Exception e) {
-            throw new RuntimeException("Erro ao conectar ao banco: " + e.getMessage());
-        }
-    }
-}
-```
-📅 Status da Entrega
-
-✔️ Documentação inicial
-✔️ Objetivos do projeto
-✔️ Funcionalidades definidas
-✔️ Script do banco
-⬜ Implementação do código (próximas etapas)
