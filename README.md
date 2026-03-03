@@ -1,6 +1,6 @@
 # minha_despensa
 
-README.md – Projeto POO – Aplicativo de Controle de Despensa
+ Projeto POO – Aplicativo de Controle de Despensa
 - Descrição do Projeto
 
 Este projeto tem como objetivo desenvolver um aplicativo de controle de despensa, dividido em duas categorias principais: Armário e Geladeira.
