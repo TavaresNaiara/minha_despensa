@@ -17,38 +17,56 @@ Permitir o gerenciamento completo dos itens no banco de dados.
 
 Aplicar conceitos de POO, persistência de dados e boas práticas de desenvolvimento.
 
-- Funcionalidades
-✔️ 1. Adicionar item
+Funcionalidades do Sistema
+1. Gerenciamento de Itens
+
+Permite ao usuário controlar completamente os produtos armazenados na despensa.
+
+Cadastrar novos itens
+
+Editar informações dos itens existentes
+
+Excluir itens do banco de dados
+
+2. Cadastro de Produtos
+
+No momento do cadastro, cada item deve conter as seguintes informações:
 
 Nome do produto
 
-Categoria (Armário/Geladeira)
+Categoria (Armário ou Geladeira)
 
 Quantidade
 
-Data de validade 
+Data de validade
 
-✔️ 2. Listar itens
+3. Consulta e Visualização
 
-Exibir todos os itens
+Funcionalidades voltadas à exibição dos itens cadastrados:
 
-Filtrar por categoria
+Listagem de todos os itens da despensa
 
-✔️ 3. Editar item
+Filtragem dos itens por categoria
 
-Atualizar nome, categoria, quantidade ou validade
+4. Atualização de Dados
 
-✔️ 4. Excluir item
+Permite manter os dados sempre atualizados:
 
-Remover itens do banco de dados
+Alteração do nome do produto
 
-✔️ 5. Organização por categoria
+Mudança de categoria
 
-Estrutura baseada nas duas categorias fixas:
+Atualização da quantidade
 
-armario
+Modificação da data de validade
 
-geladeira
+5. Organização por Categoria
+
+O sistema trabalha com duas categorias fixas para melhor organização:
+
+Armário
+
+Geladeira
 
 - Arquitetura
   
